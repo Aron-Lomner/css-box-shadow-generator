@@ -58,15 +58,15 @@ const hexToRgba = (s) => {
   let b;
   let a;
   if (s.length === 7){
-    r = Math.round((((hexToDecimal(s[1]) * 16) + hexToDecimal(s[2])) / 256) * 255);
-    g = Math.round((((hexToDecimal(s[3]) * 16) + hexToDecimal(s[4])) / 256) * 255);
-    b = Math.round((((hexToDecimal(s[5]) * 16) + hexToDecimal(s[6])) / 256) * 255);
+    r = (hexToDecimal(s[1]) * 16) + hexToDecimal(s[2]);
+    g = (hexToDecimal(s[3]) * 16) + hexToDecimal(s[4]);
+    b = (hexToDecimal(s[5]) * 16) + hexToDecimal(s[6]);
     a = 1;
   } else {
-    r = Math.round((((hexToDecimal(s[1]) * 16) + hexToDecimal(s[2])) / 256) * 255);
-    g = Math.round((((hexToDecimal(s[3]) * 16) + hexToDecimal(s[4])) / 256) * 255);
-    b = Math.round((((hexToDecimal(s[5]) * 16) + hexToDecimal(s[6])) / 256) * 255);
-    a = Math.round((((hexToDecimal(s[7]) * 16) + hexToDecimal(s[8])) / 256) * 255);
+    r = (hexToDecimal(s[1]) * 16) + hexToDecimal(s[2]);
+    g = (hexToDecimal(s[3]) * 16) + hexToDecimal(s[4]);
+    b = (hexToDecimal(s[5]) * 16) + hexToDecimal(s[6]);
+    a = (hexToDecimal(s[7]) * 16) + hexToDecimal(s[8]);
   }
   
   return `rgba(${r},${g},${b},${a})`;
