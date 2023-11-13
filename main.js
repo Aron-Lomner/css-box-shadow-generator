@@ -1,4 +1,4 @@
-import {funcGetRGBA} from "../colorConverter.js";
+import {funcGetRGBA} from "/css-box-shadow-generator/colorConverter.js";
 
 const box = document.querySelector("#box");
 const sldrOffsetX = document.querySelector("#sldrOffsetX");
