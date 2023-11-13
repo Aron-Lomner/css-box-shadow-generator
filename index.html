@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Box Shadow Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="sliders">
+        <div class="slider horizontalOffset">
+          <div class="text">
+            <div class="title">Horizonatal Offset</div>
+            <div class="value" id="hOffsetValue">0px</div>
+          </div>
+          <input type="range" id="sldrOffsetX" value="0" min="-150" max="150" />
+        </div>
+        <div class="slider verticalOffSet">
+          <div class="text">
+            <div class="title">Vertical Offset</div>
+            <div class="value" id="vOffsetValue">0px</div>
+          </div>
+          <input type="range" id="sldrOffsetY" value="0" min="-150" max="150" />
+        </div>
+        <div class="slider blurRadius">
+          <div class="text">
+            <div class="title">Blur Radius</div>
+            <div class="value" id="blurRadiusValue">0px</div>
+          </div>
+          <input type="range" id="sldrBlurRadius" value="8" min="0" max="150" />
+        </div>
+        <div class="slider spreadRadius">
+          <div class="text">
+            <div class="title">Spread Radius</div>
+            <div class="value" id="spreadRadiusValue">0px</div>
+          </div>
+          <input type="range" id="sldrSpreadRadius" value="5" min="0" max="150" />
+        </div>
+        <div class="slider Opacity">
+          <div class="text">
+            <div class="title">Opacity</div>
+            <div class="value" id="opacityValue">0px</div>
+          </div>
+          <input type="range" id="sldrOpacity" value="100" min="0" max="100" />
+        </div>
+      </div>
+      <div id="box"></div>
+    </div>
+    <div class="output">
+      <div id="copied">Copied</div>
+      <div id="outputCode">
+        <input type="text" id="css-code" readonly />
+        <button id="copy">Copy</button>
+        <input type="color" id="shadowcolor" />
+      </div>
+    </div>
+  </div>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
