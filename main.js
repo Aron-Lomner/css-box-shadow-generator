@@ -1,4 +1,4 @@
-import {funcGetRGBA} from "/colorConverter.js";
+import {funcGetRGBA} from "colorConverter.js";
 
 const box = document.querySelector("#box");
 const sldrOffsetX = document.querySelector("#sldrOffsetX");
