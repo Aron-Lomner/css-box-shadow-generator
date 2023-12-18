@@ -32,6 +32,7 @@ Watch in awe as the sliders transform mere numbers into a visual symphony of sha
 - **index.html:** The magician's stage where the shadow spectacle unfolds.
 - **style.css:** Styling, because shadows deserve to look good too.
 - **main.js:** The conductor orchestrating the shadow symphony.
+- **colorConverter.js:** Provides color conversion for compatibility between browsers
 
 ## License
 
