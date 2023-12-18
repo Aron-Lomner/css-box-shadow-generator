@@ -30,7 +30,9 @@ body {
 
 /* Remove browser specific default styling */
 input[type="range"] {
+    appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
     background: transparent;
     cursor: pointer;
     width: 100%;
@@ -40,14 +42,29 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-runnable-track {
     background: #e27f58;
     height: 8px;
-    border-radius: 3px;
+    border-radius: 15px;
     z-index: 1;
 }
 
-/* Firefox Track Style*/
-input[type="input"]::-moz-range-track {
-    background: #e2c258;
+/* Chromium Progress Style */
+input[type="range"]::-webkit-slider-runnable-track::-webkit-progress-value {
+    background-color: #3498db;
     height: 8px;
+}
+
+/* Firefox Track Style*/
+input[type="range"]::-moz-range-track {
+    background: #e27f58;
+    height: 8px;
+    border-radius: 15px;
+
+}
+
+/* Firefox Progress Style */
+input[type="range"]::-moz-range-progress {
+    background-color: greenyellow;
+    height: 8px;
+    border-radius: 15px;
 }
 
 /* Chromium Thumb Style */
@@ -55,7 +72,6 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     background-color: #af5a0b;
-    color: greenyellow;
     height: 16px;
     margin-top: -4px;
     width: 16px;
@@ -63,8 +79,9 @@ input[type="range"]::-webkit-slider-thumb {
     z-index: 2;
 }
 
-/* Firefox Track Style */
+/* Firefox Thumb Style */
 input[type="range"]::-moz-range-thumb {
+    background-color: #af5a0b;
     border: none;
     border-radius: 50%;
     height: 16px;
@@ -81,7 +98,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 #box {
-    background: rgb(105, 104, 104);
+    background: rgb(241, 177, 177);
     width: 15%;
     aspect-ratio: 1;
     max-width: 80%;
